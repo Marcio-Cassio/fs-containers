@@ -1,0 +1,38 @@
+Script started on 2026-08-27 18:25:43-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="67" LINES="19"]
+marciocassio@DESKTOP-TV17HAR:~/fs-containers$ docker start -i excit 
+ing_spence
+root@4416a5bbda99:/# apt-get update
+root@4416a5bbda99:/# apt-get -0 y install nanp p o
+Solving dependencies... 0%
+Solving dependencies... 10%
+Solving dependencies... Done
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 289 kB of archives.
+After this operation, 893 kB of additional disk space will be used.
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 1.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 1.)
+debconf: falling back to frontend: Teletype
+Setting up nano (8.7.1-1ubuntu0.1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) does not exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) does not exist
+root@4416a5bbda99:/# nano /usr/src/app/index.js
+==[ Reading... ][ Read 0 lines ]  GNU nano 8.7.1 /usr/src/app/index.js  
+^G Help^O Write Out ^F Where Is  ^K Cut^T Execute
+^X Exit^R Read File ^\ Replace   ^U Paste     ^J Justify
+*
+console.log('Hello 
+ world'Hello world')World')M-D DOS FormaM-A Append   M-B Backup Fi^T BrowseC Cancel    M-M Mac FormaM-P Prepend  ^Q Discard buffer
+Write to File: /usr/src/app/index.js   [ Writing... ] [ Wrote 1 line ]^O Write Out ^F Where Is  ^K Cut ^T ExecuteX Exit      ^R Read File ^\ Replace   ^U Paste     ^J Justify
+>root@4416a5bbda99:/# cat /usr/src/app/index.js
+console.log('Hello World')
+root@4416a5bbda99:/# exit
+exit
