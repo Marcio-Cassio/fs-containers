@@ -1,0 +1,330 @@
+Script started on 2026-08-27 18:48:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="67" LINES="19"]
+marciocassio@DESKTOP-TV17HAR:~/fs-containers$ docker start -i excit 
+e
+excit 
+ing_spence
+root@4416a5bbda99:/# apt-get -y install curl
+Solving dependencies... 0%
+Solving dependencies... 10%
+Solving dependencies... Done
+The following additional packages will be installed:
+  bash-completion ca-certificates krb5-locales libbrotli1
+  libcurl4t64 libffi8 libgnutls30t64 libgssapi-krb5-2
+  libhogweed6t64 libidn2-0 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-common libldap2 libnettle8t64
+  libnghttp2-14 libp11-kit0 libpsl5t64 librtmp1 libsasl2-2
+  libsasl2-modules libsasl2-modules-db libssh2-1t64 libtasn1-6
+  libunistring5 openssl publicsuffix
+Suggested packages:
+  gnutls-bin krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap
+  libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  bash-completion ca-certificates curl krb5-locales libbrotli1
+  libcurl4t64 libffi8 libgnutls30t64 libgssapi-krb5-2
+  libhogweed6t64 libidn2-0 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-common libldap2 libnettle8t64
+  libnghttp2-14 libp11-kit0 libpsl5t64 librtmp1 libsasl2-2
+  libsasl2-modules libsasl2-modules-db libssh2-1t64 libtasn1-6
+  libunistring5 openssl publicsuffix
+0 upgraded, 30 newly installed, 0 to remove and 3 not upgraded.
+Need to get 6615 kB of archives.
+After this operation, 20.1 MB of additional disk space will be used.
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 30.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 30.)
+debconf: falling back to frontend: Teletype
+Preconfiguring packages ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+121 added, 0 removed; done.
+Processing triggers for libc-bin (2.43-2ubuntu2.3) ...
+Processing triggers for ca-certificates (20260601~26.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+root@4416a5bbda99:/# curl -sL https://deb.nodesource.com/setup_24.x 
+root@4416a5bbda99:/# curl -sL https://deb.nodesource.com/setup_24.x 
+root@4416a5bbda99:/# curl -sL https://deb.nodesource.com/setup_24.
+root@4416a5bbda99:/# curl -sL https://deb.nodesource.com/setup_24.x 
+ | bash
+2026-08-27 21:51:48 - Installing pre-requisites
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ca-certificates is already the newest version (20260601~26.04.1).
+ca-certificates set to manually installed.
+curl is already the newest version (8.18.0-1ubuntu2.4).
+Solving dependencies... 0%
+Solving dependencies... 10%
+Installing:
+  apt-transport-https  gnupg
+Installing dependencies:
+  adduser      gpg             gpgsm        libreadline8t64
+  dirmngr      gpg-agent       libassuan9   libsqlite3-0
+  gnupg-l10n   gpg-wks-client  libksba8     pinentry-curses
+  gnupg-utils  gpgconf         libnpth0t64  readline-common
+Suggested packages:
+  liblocale-gettext-perl  libpam-systemd   scdaemon
+  perl                    pinentry-gnome3  tpm2daemon
+  cron                    tor              pinentry-doc
+  quota                   gpg-wks-server   readline-doc
+  ecryptfs-utils          parcimonie
+  dbus-user-session       xloadimage
+Summary:
+  Upgrading: 0, Installing: 18, Removing: 0, Not Upgrading: 3
+  Download size: 3498 kB
+  Space needed: 8749 kB / 1024 GB available
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 18.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 18.)
+debconf: falling back to frontend: Teletype
+78Selecting previously unselected package adduser.
+7Progress: [  0%] [.............................................] 87Progress: [  1%] [.............................................] 8Unpacking adduser (3.153ubuntu1) ...
+7Progress: [  3%] [#............................................] 8Setting up adduser (3.153ubuntu1) ...
+7Progress: [  4%] [#............................................] 87Progress: [  5%] [##...........................................] 8Selecting previously unselected package readline-common.
+7Progress: [  7%] [###..........................................] 8Unpacking readline-common (8.3-4) ...
+7Progress: [  8%] [###..........................................] 8Selecting previously unselected package libreadline8t64:amd64.
+7Progress: [ 10%] [####.........................................] 8Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+7Progress: [ 11%] [####.........................................] 8Selecting previously unselected package libsqlite3-0:amd64.
+7Progress: [ 12%] [#####........................................] 8Unpacking libsqlite3-0:amd64 (3.46.1-9ubuntu0.2) ...
+7Progress: [ 14%] [######.......................................] 8Selecting previously unselected package apt-transport-https.
+7Progress: [ 15%] [######.......................................] 8Unpacking apt-transport-https (3.2.0) ...
+7Progress: [ 16%] [#######......................................] 8Selecting previously unselected package libassuan9:amd64.
+7Progress: [ 18%] [########.....................................] 8Unpacking libassuan9:amd64 (3.0.2-2build1) ...
+7Progress: [ 19%] [########.....................................] 8Selecting previously unselected package gpgconf.
+7Progress: [ 21%] [#########....................................] 8Unpacking gpgconf (2.4.8-4ubuntu3) ...
+7Progress: [ 22%] [#########....................................] 8Selecting previously unselected package libksba8:amd64.
+7Progress: [ 23%] [##########...................................] 8Unpacking libksba8:amd64 (1.6.7-2build1) ...
+7Progress: [ 25%] [###########..................................] 8Selecting previously unselected package libnpth0t64:amd64.
+7Progress: [ 26%] [###########..................................] 8Unpacking libnpth0t64:amd64 (1.8-3build1) ...
+7Progress: [ 27%] [############.................................] 8Selecting previously unselected package dirmngr.
+7Progress: [ 29%] [############.................................] 8Unpacking dirmngr (2.4.8-4ubuntu3) ...
+7Progress: [ 30%] [#############................................] 8Selecting previously unselected package gpg.
+7Progress: [ 32%] [##############...............................] 8Unpacking gpg (2.4.8-4ubuntu3) ...
+7Progress: [ 33%] [##############...............................] 8Selecting previously unselected package pinentry-curses.
+7Progress: [ 34%] [###############..............................] 8Unpacking pinentry-curses (1.3.2-3ubuntu1) ...
+7Progress: [ 36%] [################.............................] 8Selecting previously unselected package gpg-agent.
+7Progress: [ 37%] [################.............................] 8Unpacking gpg-agent (2.4.8-4ubuntu3) ...
+7Progress: [ 38%] [#################............................] 8Selecting previously unselected package gpgsm.
+7Progress: [ 40%] [#################............................] 8Unpacking gpgsm (2.4.8-4ubuntu3) ...
+7Progress: [ 41%] [##################...........................] 8Selecting previously unselected package gnupg.
+7Progress: [ 42%] [###################..........................] 8Unpacking gnupg (2.4.8-4ubuntu3) ...
+7Progress: [ 44%] [###################..........................] 8Selecting previously unselected package gnupg-l10n.
+7Progress: [ 45%] [####################.........................] 8Unpacking gnupg-l10n (2.4.8-4ubuntu3) ...
+7Progress: [ 47%] [####################.........................] 8Selecting previously unselected package gnupg-utils.
+7Progress: [ 48%] [#####################........................] 8Unpacking gnupg-utils (2.4.8-4ubuntu3) ...
+7Progress: [ 49%] [######################.......................] 8Selecting previously unselected package gpg-wks-client.
+7Progress: [ 51%] [######################.......................] 8Unpacking gpg-wks-client (2.4.8-4ubuntu3) ...
+7Progress: [ 52%] [#######################......................] 8Setting up libksba8:amd64 (1.6.7-2build1) ...
+7Progress: [ 53%] [########################.....................] 87Progress: [ 55%] [########################.....................] 8Setting up libnpth0t64:amd64 (1.8-3build1) ...
+7Progress: [ 56%] [#########################....................] 87Progress: [ 58%] [#########################....................] 8Setting up apt-transport-https (3.2.0) ...
+7Progress: [ 59%] [##########################...................] 87Progress: [ 60%] [###########################..................] 8Setting up libsqlite3-0:amd64 (3.46.1-9ubuntu0.2) ...
+7Progress: [ 62%] [###########################..................] 87Progress: [ 63%] [############################.................] 8Setting up gnupg-l10n (2.4.8-4ubuntu3) ...
+7Progress: [ 64%] [############################.................] 87Progress: [ 66%] [#############################................] 8Setting up libassuan9:amd64 (3.0.2-2build1) ...
+7Progress: [ 67%] [##############################...............] 87Progress: [ 68%] [##############################...............] 8Setting up readline-common (8.3-4) ...
+7Progress: [ 70%] [###############################..............] 87Progress: [ 71%] [################################.............] 8Setting up gnupg-utils (2.4.8-4ubuntu3) ...
+7Progress: [ 73%] [################################.............] 87Progress: [ 74%] [#################################............] 8Setting up pinentry-curses (1.3.2-3ubuntu1) ...
+7Progress: [ 75%] [#################################............] 87Progress: [ 77%] [##################################...........] 8Setting up libreadline8t64:amd64 (8.3-4) ...
+7Progress: [ 78%] [###################################..........] 87Progress: [ 79%] [###################################..........] 8Setting up gpgconf (2.4.8-4ubuntu3) ...
+7Progress: [ 81%] [####################################.........] 87Progress: [ 82%] [####################################.........] 8Setting up gpg (2.4.8-4ubuntu3) ...
+7Progress: [ 84%] [#####################################........] 87Progress: [ 85%] [######################################.......] 8Setting up gpg-agent (2.4.8-4ubuntu3) ...
+7Progress: [ 86%] [######################################.......] 87Progress: [ 88%] [#######################################......] 8Setting up gpgsm (2.4.8-4ubuntu3) ...
+7Progress: [ 89%] [########################################.....] 87Progress: [ 90%] [########################################.....] 8Setting up dirmngr (2.4.8-4ubuntu3) ...
+7Progress: [ 92%] [#########################################....] 87Progress: [ 93%] [#########################################....] 8Setting up gnupg (2.4.8-4ubuntu3) ...
+7Progress: [ 95%] [##########################################...] 87Progress: [ 96%] [###########################################..] 8Setting up gpg-wks-client (2.4.8-4ubuntu3) ...
+7Progress: [ 97%] [###########################################..] 87Progress: [ 99%] [############################################.] 8Processing triggers for libc-bin (2.43-2ubuntu2.3) ...
+78
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+2026-08-27 21:52:04 - Repository configured successfully.
+2026-08-27 21:52:04 - To install Node.js, run: apt install nodejs -y
+2026-08-27 21:52:04 - You can use N|solid Runtime as a node.js alternative
+2026-08-27 21:52:04 - To install N|solid Runtime, run: apt install nsolid -y 
+root@4416a5bbda99:/# apt install -y nodejs
+Solving dependencies... 0%
+Solving dependencies... 10%
+Installing:
+  nodejs
+Installing dependencies:
+  libexpat1              media-types      python3.14
+  libpython3-stdlib      netbase          python3.14-minimal
+  libpython3.14-minimal  python3          tzdata
+  libpython3.14-stdlib   python3-minimal
+Suggested packages:
+  python3-doc  python3-venv     python3.14-doc  binfmt-support
+  python3-tk   python3.14-venv  binutils
+Summary:
+  Upgrading: 0, Installing: 12, Removing: 0, Not Upgrading: 3
+  Download size: 46.3 MB
+  Space needed: 271 MB / 1024 GB available
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 12.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 12.)
+debconf: falling back to frontend: Teletype
+Preconfiguring packages ...
+Configuring tzdata
+------------------
+Please select the geographic area in which you live. Subsequent
+configuration questions will narrow this down by presenting a list
+of cities, representing the time zones in which they are located.
+  1. Africa      4. Arctic    7. Australia  10. Pacific
+  2. America     5. Asia      8. Europe     11. Etc
+  3. Antarctica  6. Atlantic  9. Indian
+Geographic area: 2
+Please select the city or region corresponding to your time zone.
+  1. Adak                     80. Juneau
+  2. Anchorage                81. Kentucky/Louisville
+  3. Anguilla                 82. Kentucky/Monticello
+  4. Antigua                  83. Kralendijk
+  5. Araguaina                84. La_Paz
+  6. Argentina/Buenos_Aires   85. Lima
+  7. Argentina/Catamarca      86. Los_Angeles
+  8. Argentina/Cordoba        87. Lower_Princes
+  9. Argentina/Jujuy          88. Maceio
+  10. Argentina/La_Rioja      89. Managua
+  11. Argentina/Mendoza       90. Manaus
+  12. Argentina/Rio_Gallegos  91. Marigot
+  13. Argentina/Salta         92. Martinique
+  14. Argentina/San_Juan      93. Matamoros
+[More] 88
+  15. Argentina/San_Luis      94. Mazatlan
+  16. Argentina/Tucuman       95. Menominee
+  17. Argentina/Ushuaia       96. Merida
+  18. Aruba                   97. Metlakatla
+  19. Asuncion                98. Mexico_City
+  20. Atikokan                99. Miquelon
+  21. Atka                    100. Moncton
+  22. Bahia                   101. Monterrey
+  23. Bahia_Banderas          102. Montevideo
+  24. Barbados                103. Montreal
+  25. Belem                   104. Montserrat
+  26. Belize                  105. Nassau
+  27. Blanc-Sablon            106. New_York
+  28. Boa_Vista               107. Nipigon
+  29. Bogota                  108. Nome
+  30. Boise                   109. Noronha
+  31. Cambridge_Bay           110. North_Dakota/Beulah
+[More] 22
+  32. Campo_Grande            111. North_Dakota/Center
+  33. Cancun                  112. North_Dakota/New_Salem
+  34. Caracas                 113. Nuuk
+  35. Cayenne                 114. Ojinaga
+  36. Cayman                  115. Panama
+  37. Chicago                 116. Pangnirtung
+  38. Chihuahua               117. Paramaribo
+  39. Ciudad_Juarez           118. Phoenix
+  40. Coral_Harbour           119. Port-au-Prince
+  41. Costa_Rica              120. Port_of_Spain
+  42. Coyhaique               121. Porto_Acre
+  43. Creston                 122. Porto_Velho
+  44. Cuiaba                  123. Puerto_Rico
+  45. Curacao                 124. Punta_Arenas
+  46. Danmarkshavn            125. Rainy_River
+  47. Dawson                  126. Rankin_Inlet
+  48. Dawson_Creek            127. Recife
+[More] 32
+  49. Denver                  128. Regina
+  50. Detroit                 129. Resolute
+  51. Dominica                130. Rio_Branco
+  52. Edmonton                131. Santa_Isabel
+  53. Eirunepe                132. Santarem
+  54. El_Salvador             133. Santiago
+  55. Ensenada                134. Santo_Domingo
+  56. Fort_Nelson             135. Sao_Paulo
+  57. Fortaleza               136. Scoresbysund
+  58. Glace_Bay               137. Shiprock
+  59. Goose_Bay               138. Sitka
+  60. Grand_Turk              139. St_Barthelemy
+  61. Grenada                 140. St_Johns
+  62. Guadeloupe              141. St_Kitts
+  63. Guatemala               142. St_Lucia
+  64. Guayaquil               143. St_Thomas
+  65. Guyana                  144. St_Vincent
+[More] 128
+  66. Halifax                 145. Swift_Current
+  67. Havana                  146. Tegucigalpa
+  68. Hermosillo              147. Thule
+  69. Indiana/Indianapolis    148. Thunder_Bay
+  70. Indiana/Knox            149. Tijuana
+  71. Indiana/Marengo         150. Toronto
+  72. Indiana/Petersburg      151. Tortola
+  73. Indiana/Tell_City       152. Vancouver
+  74. Indiana/Vevay           153. Virgin
+  75. Indiana/Vincennes       154. Whitehorse
+  76. Indiana/Winamac         155. Winnipeg
+  77. Inuvik                  156. Yakutat
+  78. Iqaluit                 157. Yellowknife
+  79. Jamaica
+Time zone: 66
+78Selecting previously unselected package libexpat1:amd64.
+7Progress: [  0%] [.............................................] 87Progress: [  2%] [.............................................] 8Unpacking libexpat1:amd64 (2.7.4-1) ...
+7Progress: [  4%] [#............................................] 8Selecting previously unselected package libpython3.14-minimal:amd64.
+7Progress: [  6%] [##...........................................] 8Unpacking libpython3.14-minimal:amd64 (3.14.4-1ubuntu0.1) ...
+7Progress: [  8%] [###..........................................] 8Selecting previously unselected package python3.14-minimal.
+7Progress: [ 10%] [####.........................................] 8Unpacking python3.14-minimal (3.14.4-1ubuntu0.1) ...
+7Progress: [ 12%] [#####........................................] 8Setting up libpython3.14-minimal:amd64 (3.14.4-1ubuntu0.1) ...
+7Progress: [ 14%] [######.......................................] 87Progress: [ 16%] [#######......................................] 8Setting up libexpat1:amd64 (2.7.4-1) ...
+7Progress: [ 18%] [########.....................................] 87Progress: [ 20%] [#########....................................] 8Setting up python3.14-minimal (3.14.4-1ubuntu0.1) ...
+7Progress: [ 22%] [##########...................................] 87Progress: [ 24%] [###########..................................] 8Selecting previously unselected package python3-minimal.
+7Progress: [ 27%] [###########..................................] 8Unpacking python3-minimal (3.14.3-0ubuntu2) ...
+7Progress: [ 29%] [############.................................] 8Selecting previously unselected package media-types.
+7Progress: [ 31%] [#############................................] 8Unpacking media-types (14.0.0build1) ...
+7Progress: [ 33%] [##############...............................] 8Selecting previously unselected package netbase.
+7Progress: [ 35%] [###############..............................] 8Unpacking netbase (6.5build1) ...
+7Progress: [ 37%] [################.............................] 8Selecting previously unselected package tzdata.
+7Progress: [ 39%] [#################............................] 8Unpacking tzdata (2026c-0ubuntu0.26.04.1) ...
+7Progress: [ 41%] [##################...........................] 8Selecting previously unselected package libpython3.14-stdlib:amd64.
+7Progress: [ 43%] [###################..........................] 8Unpacking libpython3.14-stdlib:amd64 (3.14.4-1ubuntu0.1) ...
+7Progress: [ 45%] [####################.........................] 8Selecting previously unselected package python3.14.
+7Progress: [ 47%] [#####################........................] 8Unpacking python3.14 (3.14.4-1ubuntu0.1) ...
+7Progress: [ 49%] [######################.......................] 8Selecting previously unselected package libpython3-stdlib:amd64.
+7Progress: [ 51%] [######################.......................] 8Unpacking libpython3-stdlib:amd64 (3.14.3-0ubuntu2) ...
+7Progress: [ 53%] [#######################......................] 8Setting up python3-minimal (3.14.3-0ubuntu2) ...
+7Progress: [ 55%] [########################.....................] 87Progress: [ 57%] [#########################....................] 8Selecting previously unselected package python3.
+7Progress: [ 59%] [##########################...................] 8Unpacking python3 (3.14.3-0ubuntu2) ...
+7Progress: [ 61%] [###########################..................] 8Selecting previously unselected package nodejs.
+7Progress: [ 63%] [############################.................] 8Unpacking nodejs (24.20.0-1nodesource1) ...
+7Progress: [ 65%] [#############################................] 8Setting up media-types (14.0.0build1) ...
+7Progress: [ 67%] [##############################...............] 87Progress: [ 69%] [###############################..............] 8Setting up tzdata (2026c-0ubuntu0.26.04.1) ...
+7Progress: [ 71%] [################################.............] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Current default time zone: 'America/Halifax'
+Local time is now:      Thu Aug 27 18:57:20 ADT 2026.
+Universal Time is now:  Thu Aug 27 21:57:20 UTC 2026.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+7Progress: [ 73%] [#################################............] 8Setting up netbase (6.5build1) ...
+7Progress: [ 76%] [#################################............] 87Progress: [ 78%] [##################################...........] 8Setting up libpython3.14-stdlib:amd64 (3.14.4-1ubuntu0.1) ...
+7Progress: [ 80%] [###################################..........] 87Progress: [ 82%] [####################################.........] 8Setting up python3.14 (3.14.4-1ubuntu0.1) ...
+7Progress: [ 84%] [#####################################........] 87Progress: [ 86%] [######################################.......] 8Setting up libpython3-stdlib:amd64 (3.14.3-0ubuntu2) ...
+7Progress: [ 88%] [#######################################......] 87Progress: [ 90%] [########################################.....] 8Setting up python3 (3.14.3-0ubuntu2) ...
+7Progress: [ 92%] [#########################################....] 8running python rtupdate hooks for python3.14...
+running python post-rtupdate hooks for python3.14...
+7Progress: [ 94%] [##########################################...] 8Setting up nodejs (24.20.0-1nodesource1) ...
+7Progress: [ 96%] [###########################################..] 87Progress: [ 98%] [############################################.] 8Processing triggers for libc-bin (2.43-2ubuntu2.3) ...
+78root@4416a5bbda99:/# node /usr/src/app/index;js
+Hello World
+bash: js: command not found
+root@4416a5bbda99:/# npd  ode /usr/src/app/index.js
+Hello World
+root@4416a5bbda99:/# exit
+exit
+marciocassio@DESKTOP-TV17HAR:~/fs-containers$ exit
+exit
+Script done on 2026-08-27 18:58:44-03:00 [COMMAND_EXIT_CODE="0"]
